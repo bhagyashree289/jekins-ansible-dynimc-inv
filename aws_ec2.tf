@@ -2,12 +2,13 @@ provider "aws"{
 region = "ap-south-1"
 }
 
-resource "aws_instance"  "AWSServer"{
-ami = "ami-067c21fb1979f0b27"
+
+resource "aws_instance" "AWSServer"{
+ami = "ami-02bb7d8191b50f4bb"
 instance_type = "t2.micro"
-security_group = ["launch-wizard-2"]
-key_name = "bhayashreebiradar"
+security_groups = ["launch-wizard-2"]
+key_name = "bhagyashreebiradar"
 tags = {
-Name = "Tomcatservers"
+Name =  "tomcatservers"
 }
 }
