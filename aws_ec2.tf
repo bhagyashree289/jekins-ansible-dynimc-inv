@@ -1,8 +1,8 @@
-provider = "aws"{
+provider "aws"{
 region = "ap-south-1"
 }
 
-resource = "aws_instance"  "AWSServer"{
+resource "aws_instance"  "AWSServer"{
 ami = "ami-067c21fb1979f0b27"
 instance_type = "t2.micro"
 security_group = ["launch-wizard-2"]
